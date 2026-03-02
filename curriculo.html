@@ -92,13 +92,13 @@
         <div class="section-box">
             <h3>Dados Pessoais</h3>
             <label>Nome Completo</label>
-            <input type="text" id="fnome" oninput="render()" value="ANA ROSA SILVA DE ALCANTARA SANTOS">
+            <input type="text" id="fnome" oninput="render()" value="Mariana Lopes Andrade">
             <label>E-mail</label>
-            <input type="text" id="femail" oninput="render()" value="anarosa1713@outlook.com">
+            <input type="text" id="femail" oninput="render()" value="mariana.andrade.contato@emailficticio.com">
             <label>Telefone</label>
-            <input type="text" id="ffone" oninput="render()" value="+55 65 98442-2228">
+            <input type="text" id="ffone" oninput="render()" value="+55 (67) 98874-3210">
             <label>Endereço</label>
-            <input type="text" id="fend" oninput="render()" value="Cuiabá, MT">
+            <input type="text" id="fend" oninput="render()" value="Dourados – MS">
         </div>
 
         <div class="section-box">
@@ -112,12 +112,12 @@
 
             <div id="box-resumo">
                 <label>Resumo Profissional</label>
-                <textarea id="fresumo" rows="3" oninput="render()">Tecnóloga em Agrocomputação focada na aplicação de tecnologias para eficiência produtiva e análise de dados no campo.</textarea>
+                <textarea id="fresumo" rows="3" oninput="render()">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "< /textarea>
             </div>
 
             <div id="box-objetivo">
                 <label>Objetivo</label>
-                <textarea id="fobjetivo" rows="2" oninput="render()">Atuar no setor de inteligência agrícola contribuindo com otimização de processos.</textarea>
+                <textarea id="fobjetivo" rows="2" oninput="render()">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." </textarea>
             </div>
         </div>
 
@@ -138,7 +138,7 @@
 
         <div class="section-box">
             <h3>Habilidades (separe por vírgula)</h3>
-            <input type="text" id="fhab" oninput="render()" value="Python, SQL, Geoprocessamento, Power BI, Agricultura de Precisão">
+            <input type="text" id="fhab" oninput="render()" value="adaptabilidade, inteligência emocional, Comunicação, Trabalho em Equipe">
         </div>
 
         <button class="btn-download" onclick="exportarPDF()">BAIXAR PDF</button>
@@ -152,9 +152,20 @@
 <script>
     let currentModel = 'agro';
     let data = {
-        formacao: [{ curso: 'Tecnologia em Agrocomputação', local: 'UniSenai', data: '2023 - 2026', desc: 'Foco em Agricultura 4.0 e TI aplicada.' }],
-        experiencia: [{ cargo: 'Atendente', local: 'Imagens Medicina Diagnóstica', data: '2024 - Atual', desc: 'Atendimento e suporte ao cliente.' }],
-        certificados: [{ nome: 'Python para Dados (80h)' }, { nome: 'Certificação Geoprocessamento QGIS' }]
+        formacao: [{ 
+            curso: 'curso', 
+            local: 'local de ensino', 
+            desc: 'descrição' 
+        }],
+        experiencia: [{ 
+            cargo: 'cargo', 
+            local: 'local de trabalho', 
+            data: 'ano de inicio - Atual/ano de desligamento', 
+            desc: 'descrição' 
+        }],
+        certificados: [
+            { nome: 'curso de ... (80h)' }, 
+            { nome: 'Certificação em ...' }]
     };
 
     function toggleResumoObjetivo() {
